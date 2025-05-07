@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang - THE YUMMY KATSU</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/assets/css/output.css" rel="stylesheet">
+</head>
+<body class="bg-amber-50 font-sans">
+    <!-- Navigasi -->
+    <nav class="bg-amber-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold">THE YUMMY KATSU</div>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.php" class="hover:text-amber-200">Beranda</a>
+                <a href="menu.php" class="hover:text-amber-200">Menu</a>
+                <a href="about.php" class="hover:text-amber-200 font-bold">Tentang</a>
+            </div>
+            <button class="md:hidden" id="mobile-menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="md:hidden hidden bg-amber-700 px-4 py-2" id="mobile-menu">
+            <a href="index.php" class="block py-2 hover:text-amber-200">Beranda</a>
+            <a href="menu.php" class="block py-2 hover:text-amber-200">Menu</a>
+            <a href="about.php" class="block py-2 hover:text-amber-200 font-bold">Tentang</a>
+        </div>
+    </nav>
+
+    <!-- Konten Tentang Kami -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-3xl">
+            <h1 class="text-4xl font-bold text-amber-800 mb-8">Tentang Kami</h1>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <p class="text-gray-700 mb-4">Yummy Katsu adalah restoran spesialis chicken katsu yang berdiri sejak 2020. Kami berkomitmen untuk menyajikan chicken katsu dengan kualitas terbaik dan harga yang terjangkau.</p>
+                
+                <h2 class="text-xl font-bold text-amber-700 mt-6 mb-2">Visi Kami</h2>
+                <p class="text-gray-700 mb-4">Menjadi restoran chicken katsu terbaik di Indonesia dengan cita rasa yang konsisten dan pelayanan yang memuaskan.</p>
+                
+                <h2 class="text-xl font-bold text-amber-700 mt-6 mb-2">Lokasi</h2>
+                <p class="text-gray-700">Jl. Katsu No. 123<br>Kota Jakarta Selatan<br>DKI Jakarta, 12345</p>
+                
+                <h2 class="text-xl font-bold text-amber-700 mt-6 mb-2">Jam Buka</h2>
+                <p class="text-gray-700">
+                    Senin-Jumat: 10.00 - 22.00<br>
+                    Sabtu-Minggu: 09.00 - 23.00
+                </p>
+                
+                <h2 class="text-xl font-bold text-amber-700 mt-6 mb-2">Kontak</h2>
+                <p class="text-gray-700">
+                    Telepon: (021) 1234-5678<br>
+                    Email: info@yummykatsu.id<br>
+                    Instagram: @yummykatsu.id
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-amber-900 text-white p-4 text-center">
+        <p>&copy; <?php echo date('Y'); ?> THE YUMMY KATSU. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
